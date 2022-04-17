@@ -5,11 +5,29 @@ using namespace std;
 int main()
 {
     ifstream ifs;
-    int score1, socre2;
+    ofstream ofs;
+    int score1, score2;
     int sum;
     string sname;
     float avg;
 
-    for (int i=0; i<=10; i++)
+    ifs.open("student.txt");
+    if(!ifs)
+    {
+        cout <<"File open Error\n";
+        exit(0);
+    }
+
+    ofs.open("studentscore.txt");
+    if(!ofs)
+    {
+        cout <<"File open Error\n";
+        exit(0);
+    }
+    for (int i=0; i<=10; i++){
+        ifs>>sname>>score1>>score2;
+
+
+    }
     
 }
