@@ -11,7 +11,7 @@ int main()
     string sname;
     float avg;
 
-    ifs.open("student.txt");
+    ifs.open("students.txt");
     if(!ifs)
     {
         cout <<"File open Error\n";
